@@ -1,7 +1,8 @@
 "use strict";
 
 var meister = {
-  poolId: 'us-east-1:e4f9e453-50b6-4bed-8bb7-ceee5c00613b'
+  //phase2
+  poolId: 'xxx'
 };
 
 meister.identity = new $.Deferred();
