@@ -2,7 +2,7 @@
 
 var meister = {
   //phase2
-  poolId: 'xxx'
+  poolId: 'xxxxx'
 };
 
 meister.identity = new $.Deferred();
