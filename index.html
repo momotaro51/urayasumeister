@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>浦安マイスター道</title>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+    <link rel="stylesheet" href='css/main.css'>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src='/vendor.js'></script>
+    <script src='/app.js'></script>
+    <meta name="google-signin-client_id"
+          content="282513395699-2ja7s5v68bdu0u81jq59g5ak4hg8kke5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class='markup'>
+      <div class='nav-container no-select fixed-top u-full-width'>
+        <ul class='inline-list hover-links nav-list six columns'>
+          <li><a class='text-lg' href=""><img src='images/home.png' /></a></li>
+        </ul>
+        <!-- Phase 2
+        <div class='four columns signin-bar'>
+          <span class='navbar-padding u-pull-right'>
+            <span class="g-signin2" data-onsuccess="googleSignIn"></span>
+          </span>
+        </div>
+      -->
+      </div>
+      <div class='view-container container'>
+      </div>
+      <div class='templates'>
+        <div class='profile-link navbar-padding-lg'>
+          <a href="#profile"></a>
+        </div>
+        <div class='landing-view'>
+        <!-- Markup Continues... -->
+          <div class="section categories">
+            <div class="container bg-mask">
+              <div class="row">
+                <img src='images/toptxt.png' class="hero-image"/>
+              </div>
+              <p class="section-description">浦安に関するクイズに答えて浦安のことをもっと知ろう！</p>
+              <a class="button button-primary" href='#problem-1'>スタート</a>
+            </div>
+          </div>
+          <div class="section-warning">
+            <ul>
+              <li>本サイトでは、Javascriptを使用しております。ご利用の際にはブラウザ設定のJavaScript有効にして下さい。</li>
+              <li>本サイトでは、ブラウザの「Cookie」を利用しております。ご利用の際にはブラウザの「Cookie」設定を有効にして下さい。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='profile-view'>
+          <h3>プロフィール</h3>
+          <div class='email'></div>
+        </div>
+
+        <div class='problem-view'>
+          <h3 class='title'></h3>
+          <p data-name='description'></p>
+          <form>
+            <fieldset>
+              <label for="select1">
+                <input type="radio" name="radios" id="select1" value="select1" />
+                <span data-name='select1'></span>
+              </label>
+              <label for="select2">
+                <input type="radio" name="radios" id="select2" value="select2" />
+                <span data-name='select2'></span>
+              </label>
+              <label for="select3">
+                <input type="radio" name="radios" id="select3" value="select3" />
+                <span data-name='select3'></span>
+              </label>
+            </fieldset>
+            <div>
+              <button class='button-primary check-btn'>答え合わせ</button>
+              <p class='result'></p>
+            </div>
+          </form>
+        </div>
+
+        <!--
+        <li class='skip-btn'>
+          <a>Skip This Problem</a>
+        </li>
+      -->
+
+        <div class='correct-flash'>
+          <span></span> <a>次の問題へ</a>
+        </div>
+
+        <div class='resultAnnouncement-view'>
+          <h3>あなたのマイスター度は</h3>
+          <div class='level'></div>
+          <img class='levelimg' src="" width="300" height="300"/>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <footer id="footer" class="twelve columns">
+        Copyright © NapSalon All Rights Reserved
+      </footer>
+    </div>
+    <script type='text/javascript'>
+      $(window).ready(meister.appOnReady);
+    </script>
+  </body>
+</html>
